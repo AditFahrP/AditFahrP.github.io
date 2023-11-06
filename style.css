@@ -10,6 +10,10 @@ body {
     height: 100vh;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* header */
 .head-bar {
     top: 0;
@@ -23,7 +27,7 @@ ul {
 }
 
 .navbar {
-    padding: 0.5rem 3rem;
+    padding: 1.5rem 3.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -38,15 +42,17 @@ ul {
     gap: 20px;
 }
 
-.nav-menu-bar a {
-    font-size: xx-small;
-    font-weight: 400;
+.nav-menu-bar > a {
+    font-size: medium;
+    font-weight: 500;
+    transition: all 300ms ease-in-out;
 }
 
 a {
     text-decoration: none;
     font-weight: 700;
     color: black;
+    transition: all 300ms ease-in-out;
 }
 
 a:hover {
@@ -56,29 +62,28 @@ a:hover {
 /* section one */
 .section-one {
     height: 100vh;
-    padding-top: 3rem;
+    padding-top: 6.5rem;
     margin-top: 0;
     background-color:  #f9f9f9;
 }
 
-.sec-div {
+.sec-div-home {
     place-items: center;
     display: flex;
-    padding-top: 1rem;
     gap: 1rem;
     padding: 0.5rem 3rem;
     justify-content: space-around;
 }
 
-.sec-div-text > h1 {
+.sec-div-text-home > h1 {
     line-height: 130%;
-    font-size: 2rem;
+    font-size: 4rem;
     letter-spacing: 2px;
 }
 
-.sec-div-text > p {
-    font-size: smaller;
-    font-weight: 200;
+.sec-div-text-home > p {
+    font-size: larger;
+    font-weight: 300;
     letter-spacing: 1px;
     padding-top: 1rem;
 }
@@ -86,32 +91,139 @@ a:hover {
 .sec-div-logo > a {
     letter-spacing: 10px;
     line-height: 250%;
-    font-size: larger;
+    font-size: 200%;
 }
 
-.sec-div-text > b {
+.sec-div-logo > a:hover {
+    color: gray;
+}
+
+.sec-div-text-home > b {
     font-size: x-small;
     font-weight: 400;
+}
+
+.sec-div-skill {
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+}
+
+.sec-div-skill > b {
+    font-size: larger;
+    text-align: center;
+    font-weight: 600;
+    padding-right: 2rem;
+    color: #121314;
+    border-right: 2px solid rgba(25, 25, 25, .5);
+}
+
+.sec-div-skill > ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 2rem;
+    padding-left: 1rem;
+}
+
+.sec-div-skill > ul > li {
+    display: flex;
+    position: relative;
+    gap: 1rem;
 }
 
 .img-profile {
     display: flex;
     flex-direction: row;
-    width: 25%;
-    border-radius: 30%;
+    width: 30%;
+    border-radius: 50%;
     border: 2px solid black;
 }
 
 /* secrtion two */
 .section-two {
+    display: grid;
     height: 100vh;
-    margin-top: 25px;
-    background-color: white;
+    padding-top: 3.5rem;
+    background-color: #ffffff;
 }
 
+.sec-div-about {
+    place-items: center;
+    display: flex;
+    gap: 3rem;
+    padding: 0.5rem 3rem;
+}
+
+.sec-div-content-about {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+
+.sec-div-text-about {
+    color: blue;
+}
+
+.sec-div-text-about > h2 {
+    padding-top: 1rem;
+    color: black;
+}
+
+.sec-div-text-about h5 {
+    padding-top: 1rem;
+    font-size: medium;
+    font-weight: 400;
+    color: black;
+}
 /* section three */
 .section-three {
+    display: grid;
     height: 100vh;
-    margin-top: 25px;
+    padding-top: 7rem;
+    background-color: #f6f6f6;
 }
 
+.sec-div-project {
+    place-items: center;
+    padding: 0.5rem 3rem;
+    color: blue;
+}
+
+.sec-div-content-project h2 {
+    padding-top: 1rem;
+    color: black;
+}
+
+.sec-div-container-project {
+    background-color: rgb(255, 255, 255);
+    margin-top: 1rem;
+    padding: 1rem 1rem;
+    height: 50vh;
+    border-radius: 25px;
+    display: flex;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.275);
+    flex-direction: row;
+}
+
+
+.sec-div-container-project > img {
+    border-radius: 20px;
+}
+
+.sec-div-text-project > b {
+    font-weight: bolder;
+    padding-left: 2rem;
+    color: black;
+    text-align: center;
+}
+
+.sec-div-text-project > p {
+    color: black;
+    flex-direction: column;
+}
+
+.footer {
+    margin-top: 20rem;
+    background-color: #f6f6f6;
+}

@@ -425,7 +425,7 @@ a:hover {
     }
 
     .sec-div-text-home > h1 {
-        font-size: 30px;
+        font-size: 3rem;
     }
 
     .sec-div-about {
@@ -469,7 +469,7 @@ a:hover {
     }
 
     .sec-div-content-project > h2 {
-        font-size: 20px;
+        font-size: 1.3rem;
     }
 
     .sec-div-container-project {
@@ -520,7 +520,7 @@ a:hover {
 
 }
 
-@media screen and (max-width: 400px ){
+@media screen and (max-width: 576px ){
     .navbar {
         padding: 1rem 1rem;
     }
@@ -533,17 +533,12 @@ a:hover {
         font-size: 20px;
     }
 
-    .navbar-menu__offcanvas > ul > li {
-        font-size: medium;
-        font-weight: 400;
-    }
-
     .sec-div-text-home {
         font-size: smaller;
     }
 
     .sec-div-text-home > h1 {
-        font-size: 30px;
+        font-size: 2rem;
     }
 
     .sec-div-skill {
@@ -583,7 +578,7 @@ a:hover {
     }
 
     .sec-div-content-contac > h2 {
-        font-size: 20px;
+        font-size: 1.3rem;
     }
 
     .footer {

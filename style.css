@@ -583,9 +583,9 @@ a:hover {
 
     .footer {
         height: auto;
-        padding: 3rem;
+        padding: 2rem;
         margin-top: 10rem;
-        font-size: 15px;
+        font-size: 0.9rem;
         text-align: center;
     }
 }

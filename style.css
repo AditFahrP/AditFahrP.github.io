@@ -392,8 +392,13 @@ a:hover {
 
 /* Respomsive Web */
 @media screen and (max-width: 768px ){
-    body {
+    .section-one {
         width: auto;
+        height: auto;
+    }
+
+    .navbar {
+        padding: 1.5rem 1.5rem;
     }
 
     .navbar > h2 {
@@ -413,6 +418,10 @@ a:hover {
         flex-direction: column-reverse;
         text-align: center;
         justify-content: center;
+    }
+
+    .sec-div-home > img {
+        width: 250px;
     }
 
     .sec-div-text-home > h1 {
@@ -436,6 +445,10 @@ a:hover {
 
     .sec-div-about {
         padding-top: 0rem;
+    }
+
+    .sec-div-content-about > img {
+        width: 250px;
     }
 
     .section-three {
@@ -507,7 +520,24 @@ a:hover {
 
 }
 
-@media screen and (max-width: 576px ){
+@media screen and (max-width: 400px ){
+    .navbar {
+        padding: 1rem 1rem;
+    }
+
+    .navbar > h2 {
+        font-size: medium;
+    }
+
+    .navbar-menu__hamburger-button {
+        font-size: 20px;
+    }
+
+    .navbar-menu__offcanvas > ul > li {
+        font-size: medium;
+        font-weight: 400;
+    }
+
     .sec-div-text-home {
         font-size: smaller;
     }
@@ -528,6 +558,14 @@ a:hover {
         border-bottom: 2px solid rgba(25, 25, 25, .5);
     }
 
+    .sec-div-skill > ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+        padding: 1rem;
+        gap: 2rem;
+    }
+
     .sec-div-skill > ul > li {
         flex-direction: column;
         width: 90px;
@@ -536,8 +574,12 @@ a:hover {
         
     }
 
+    .sec-div-content-about > img {
+        width: 250px;
+    }
+
     .sec-div-content-contac > b {
-        margin-bottom: 1rem;
+        margin-bottom: 0rem;
     }
 
     .sec-div-content-contac > h2 {

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Adithia FP</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,10 +15,23 @@
                 <li class="nav-menu-bar"><a href="#home">Home</a></li>
                 <li class="nav-menu-bar"><a href="#about">About</a></li>
                 <li class="nav-menu-bar"><a href="#project">Project</a></li>
-                <li class="nav-menu-bar"><a href="#contac">Contac</a></li>
+                <li class="nav-menu-bar"><a href="#contact">Contac</a></li>
             </ul>
+            <button id="hamburgerButton" class="navbar-menu__hamburger-button pointer"><span class="fa-solid fa-bars"></span></button>
         </nav>
     </header>
+
+    <!-- Off Canvas -->
+    <div class="navbar-menu__offcanvas">
+        <button id="xmarkButton" class="navbar-menu__xmark-button pointer"><span class="fa-solid fa-xmark"></span></button>
+                <ul class="navbar-menu__list-offcanvas">
+                <li class="navbar-menu__list-offcanvas-item"><a href="#home">Home</a></li>
+                <li class="navbar-menu__list-offcanvas-item"><a href="#about">About</a></li>
+                <li class="navbar-menu__list-offcanvas-item"><a href="#project">Projects</a></li>
+                <li class="navbar-menu__list-offcanvas-item"><a href="#contact">Contact</a></li>
+            </ul>
+    </div>
+
     <!-- section one home -->
     <section class="section-one" id="home">
         <div class="sec-div-home">
@@ -86,10 +99,10 @@
     </section>
 
     <!-- section 4 -->
-    <section class="section-four" id="contac"> 
+    <section class="section-four" id="contact"> 
         <div class="sec-div-contac">
             <div class="sec-div-content-contac">
-                <b>Contact</b>
+                <b>CONTACT</b>
                 <h2>If you need anything, my contact is below <span class="fa-regular fa-hand-point-down fa-bounce" style="color: #ff3d3d;"></span></h2>
             </div>
             <div class="sec-div-container-contac">
@@ -127,5 +140,6 @@
         <h4>Made with <span class="fa-solid fa-heart" style="color: red;"></span> by AFP - Huge Inspiration came from <a href="https://mksdesuyo.github.io/" target="_blank">Rizq MKS</a> and <a href="https://www.stefantopalovic.com/" target="_blank">Stefan Topalovic</a> </h4>
     </footer>
     <script src="https://kit.fontawesome.com/481c1b537f.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>

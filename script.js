@@ -14,7 +14,7 @@ xmarkBtn.addEventListener('click', () => {
 for(i = 0; i < navMenuBtn.length; i++) {
     navMenuBtn[i].addEventListener('click', closeOffcanvasMenu);
 };
+
 var tahunElement = document.getElementById("tahun");
     var tahunSaatIni = new Date().getFullYear();
     tahunElement.textContent = tahunSaatIni;
-};

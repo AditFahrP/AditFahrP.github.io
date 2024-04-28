@@ -140,39 +140,6 @@ a:hover {
     border: 2px solid black;
 }
 
-.icon-list {
-    list-style-type: none;
-    padding: 0;
-}
-
-.icon-list li {
-    display: inline-block;
-    margin: 10px;
-    position: relative;
-}
-
-.icon-list li img {
-    display: block;
-    height: auto;
-}
-
-.icon-list li span {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    padding: 5px 0;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.icon-list li:hover span {
-    opacity: 1;
-}
-
 /* secrtion two */
 .section-two {
     display: grid;

@@ -6,11 +6,13 @@ hamburgerBtn.addEventListener('click', () => {
 const closeOffcanvasMenu = () => {
     document.querySelector('.navbar-menu__offcanvas').classList.remove('open');
 };
+
 xmarkBtn = document.getElementById('xmarkButton');
 navMenuBtn = document.querySelectorAll('.navbar-menu__list-offcanvas-item');
 xmarkBtn.addEventListener('click', () => {
     closeOffcanvasMenu();
 });
+
 for(i = 0; i < navMenuBtn.length; i++) {
     navMenuBtn[i].addEventListener('click', closeOffcanvasMenu);
 };

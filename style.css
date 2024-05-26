@@ -59,14 +59,6 @@ a {
     text-decoration: underline;
 }
 
-.nav-menu-bar > a:active {
-    text-decoration: underline;
-}
-
-.nav-menu-bar > a:focus {
-    text-decoration: underline;
-}
-
 /* section one */
 .section-one {
     height: 100vh;

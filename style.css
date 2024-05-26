@@ -55,7 +55,7 @@ a {
     transition: all 300ms ease-in-out;
 }
 
-.nav-menu-bar > a:hover {
+a:hover {
     text-decoration: underline;
 }
 

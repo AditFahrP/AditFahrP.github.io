@@ -20,3 +20,45 @@ for(i = 0; i < navMenuBtn.length; i++) {
 var tahunElement = document.getElementById("tahun");
     var tahunSaatIni = new Date().getFullYear();
     tahunElement.textContent = tahunSaatIni;
+
+    const sunMoonToggle = document.getElementById('sunMoonToggle');
+        const themeStyle = document.getElementById('theme-style');
+
+        // Fungsi untuk mengatur tema dan gambar berdasarkan preferensi pengguna
+        function setThemeAndImage() {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                themeStyle.setAttribute('href', 'style-dark.css');
+                sunMoonToggle.querySelector('img').setAttribute('src', 'img/bxs-moon.svg');
+                sunMoonToggle.querySelector('img').setAttribute('alt', 'Moon');
+            } else {
+                themeStyle.setAttribute('href', 'style-light.css');
+                sunMoonToggle.querySelector('img').setAttribute('src', 'img/bx-sun.svg');
+                sunMoonToggle.querySelector('img').setAttribute('alt', 'Sun');
+            }
+        }
+
+        // Fungsi untuk mengubah tema dan gambar secara manual
+        function toggleThemeAndImage(event) {
+            event.preventDefault(); // Mencegah aksi default dari link
+            const currentImgSrc = sunMoonToggle.querySelector('img').getAttribute('src');
+
+            if (currentImgSrc.includes('bx-sun.svg')) {
+                themeStyle.setAttribute('href', 'style-dark.css');
+                sunMoonToggle.querySelector('img').setAttribute('src', 'img/bxs-moon.svg');
+                sunMoonToggle.querySelector('img').setAttribute('alt', 'Moon');
+            } else {
+                themeStyle.setAttribute('href', 'style-light.css');
+                sunMoonToggle.querySelector('img').setAttribute('src', 'img/bx-sun.svg');
+                sunMoonToggle.querySelector('img').setAttribute('alt', 'Sun');
+            }
+        }
+
+        // Set tema saat halaman dimuat
+        setThemeAndImage();
+
+        // Pantau perubahan pada preferensi warna
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', setThemeAndImage);
+
+        // Tambahkan event listener untuk mengubah tema dan gambar secara manual
+        sunMoonToggle.addEventListener('click', toggleThemeAndImage);
+

@@ -213,8 +213,9 @@ a:hover {
 
 /* section three */
 .section-three {
-    height: 100vh;
+    height: auto;
     padding-top: 7rem;
+    padding-bottom: 7rem;
     background-color: #f6f6f6;
 }
 
@@ -242,6 +243,7 @@ a:hover {
 .img-project {
     width: 100%;
     border-radius: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.275);
 }
 
 .sec-div-text-project {

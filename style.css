@@ -242,6 +242,7 @@ a:hover {
     background-color: rgb(255, 255, 255);
     padding: 1rem;
     height: 46vh;
+    /* height: fit-content; */
     border-radius: 25px;
     margin-top: 1rem;
     display: flex;
@@ -254,10 +255,27 @@ a:hover {
     color: black;
 }
 
-.img-project {
+.img-project-1 {
     width: 100%;
     border-radius: 20px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.275);
+}
+
+.img-project-2 {
+    width: 36.8rem;
+    /* height: 100%; */
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.275);
+}
+
+.img-project-3 {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.275);
+}
+
+.img-project-skills-3 {
+    height: 15%;
 }
 
 .sec-div-text-project {
@@ -302,6 +320,10 @@ a:hover {
 
 .sec-div-text-project > a:hover {
     color: grey;
+}
+
+.sec-div-text-project >.text-adjusment {
+    font-size: 0.74rem;
 }
 
 /* section four */
@@ -495,7 +517,7 @@ a:hover {
         width: 100%;
     }
 
-    .img-project {
+    .img-project-1, .img-project-2, .img-project-3 {
         width: 100%;
     }
 

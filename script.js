@@ -84,8 +84,43 @@ var tahunElement = document.getElementById("tahun");
                 sunMoonToggleOffCanvas.querySelector('img').setAttribute('alt', 'Sun');
             }
         }
+        
+        let imageIndex = 0;
+        let interval;
+        
+        const images = [
+            "img/listfilm/Foto Web Listfilm.png",
+            "img/listfilm/Upcoming.png",
+            "img/listfilm/nowplaying.png",
+            "img/listfilm/bookmark.png",
+            "img/listfilm/serch.png",
+        ];
 
-        // Set tema saat halaman dimuat
+        const images2 = [
+            "img/forumdiskusi/home.png",
+            "img/forumdiskusi/discus.png",
+            "img/forumdiskusi/profile.png",
+            "img/forumdiskusi/search.png",
+            "img/forumdiskusi/login.png",
+            "img/forumdiskusi/signup.png",
+        ]
+
+        const images3 = [
+            "img/pos/point of sales.png",
+            "img/pos/antar.png",
+            "img/pos/beli.png",
+            "img/pos/jual.png",
+            "img/pos/kasir.png",
+        ]
+        
+        function rotateImage() {
+            imageIndex = (imageIndex + 1) % images.length;
+            document.getElementById('rotatingImage').src = images[imageIndex];
+            document.getElementById('rotatingImage2').src = images2[imageIndex];
+            document.getElementById('rotatingImage3').src = images3[imageIndex];
+        }
+        setInterval(rotateImage, 1500);
+            
         setThemeAndImage();
         setThemeAndImageOffCanvas();
 

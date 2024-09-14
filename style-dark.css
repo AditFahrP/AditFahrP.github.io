@@ -193,8 +193,9 @@ a:hover {
 /* secrtion two */
 .section-two {
     display: grid;
-    height: 100vh;
-    padding-top: 3.5rem;
+    height: auto;
+    padding-bottom: 1.5rem;
+    padding-top: 7rem;
     background-color: rgb(34, 34, 34);
 }
 
@@ -227,6 +228,18 @@ a:hover {
     color: white;
 }
 
+.sec-div-text-about > b {
+    color: red;
+}
+
+.sec-div-text-about > .education {
+    color: white;
+}
+
+.sec-div-text-about > .education > li > a {
+    color: gray;
+}
+
 /* section three */
 .section-three {
     height: auto;
@@ -237,7 +250,7 @@ a:hover {
 
 .sec-div-project {
     padding: 0.5rem 3rem;
-    color: blue;
+    color: red;
 }
 
 .sec-div-container-project {
@@ -315,7 +328,7 @@ a:hover {
 
 .sec-div-contac {
     padding: 0.5rem 3rem;
-    color: blue;
+    color: red;
 }
 
 .sec-div-container-contac {

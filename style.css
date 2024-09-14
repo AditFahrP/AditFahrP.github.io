@@ -191,8 +191,9 @@ a:hover {
 /* secrtion two */
 .section-two {
     display: grid;
-    height: 100vh;
-    padding-top: 3.5rem;
+    height: auto;
+    padding-top: 7rem;
+    padding-bottom: 1.5rem;
     background-color: #ffffff;
 }
 
@@ -216,6 +217,23 @@ a:hover {
 .sec-div-text-about > h2 {
     padding-top: 1rem;
     color: black;
+}
+
+.sec-div-text-about > .education {
+    padding-top: 0.5rem;
+    color: #121314;
+    text-decoration: solid;
+    font-weight: 600;
+    list-style: circle;
+}
+
+.sec-div-text-about > .education > h5 {
+    font-size: 13px;
+    padding-top: 0.5rem;
+}
+
+.sec-div-text-about > .education > li {
+    padding-top: 0.5rem;
 }
 
 .sec-div-text-about h5 {
@@ -513,6 +531,10 @@ a:hover {
         padding-bottom: 5rem;
     }
 
+    .sec-div-text-about > ul {
+        text-align: left;
+    }
+
     .sec-div-container-project > a {
         width: 100%;
     }
@@ -755,6 +777,10 @@ a:hover {
         gap: 2px;
         font-size: smaller;
         
+    }
+
+    .education {
+        color: #121314;
     }
 
     .sec-div-content-about > img {

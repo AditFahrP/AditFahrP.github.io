@@ -49,6 +49,26 @@ ul {
     transition: all 300ms ease-in-out;
 }
 
+.nav-menu-bar > .dropdown {
+    border-style: none;
+    font-size: medium;
+    font-weight: 500;
+    background: none;
+    color: white;
+    /* background-color: rgb(34, 34, 34); */
+    transition: all 300ms ease-in-out;
+}
+
+.nav-menu-bar > .dropdown > option {
+    border-style: none;
+    font-size: medium;
+    font-weight: 500;
+    background: none;
+    color: black;
+    /* background-color: rgb(34, 34, 34); */
+    transition: all 300ms ease-in-out;
+}
+
 .nav-menu-bar img {
     width: 100%;
     display: flex;
@@ -214,6 +234,17 @@ a:hover {
 
 .sec-div-text-about {
     color: blue;
+}
+
+.sec-div-text-about > .text-about > h2 {
+    padding-top: 1rem;
+    color: white;
+}
+
+.sec-div-text-about > .text-about > h5 {
+    padding-top: 1rem;
+    color: white;
+    text-align: justify;
 }
 
 .sec-div-text-about > h2 {
@@ -440,6 +471,27 @@ a:hover {
     color: white;
     font-weight: 600;
     font-size: larger;
+    transition: all 300ms ease-in-out; 
+}
+
+.navbar-menu__list-offcanvas-item-dropdown > .dropdown {
+    text-decoration: none;
+    border: none;
+    background: none;
+    background-color: rgb(34, 34, 34);
+    color: #fff;
+    font-weight: 600;
+    font-size: larger;
+    transition: all 300ms ease-in-out; 
+}
+
+.navbar-menu__list-offcanvas-item-dropdown > .dropdown > option {
+    text-decoration: none;
+    border: none;
+    background: none;
+    color: #ffff;
+    font-weight: 600;
+    font-size: x-small;
     transition: all 300ms ease-in-out; 
 }
 

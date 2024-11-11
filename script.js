@@ -17,6 +17,93 @@ for(i = 0; i < navMenuBtn.length; i++) {
     navMenuBtn[i].addEventListener('click', closeOffcanvasMenu);
 };
 
+// Fungsi untuk mengubah bahasa navbar
+function changeLanguage() {
+    // Ambil nilai bahasa yang dipilih
+    const selectedLanguage = document.getElementById("languageSelect").value;
+  
+    // Simpan bahasa yang dipilih ke dalam localStorage
+    localStorage.setItem("preferredLanguage", selectedLanguage);
+  
+    // Dapatkan semua elemen dengan kelas "lang"
+    const allLanguages = document.querySelectorAll("[class*='lang-']");
+  
+    // Sembunyikan semua elemen bahasa terlebih dahulu
+    allLanguages.forEach(element => {
+      element.style.display = "none";
+    });
+  
+    // Tampilkan elemen sesuai bahasa yang dipilih
+    const selectedElements = document.querySelectorAll(`.lang-${selectedLanguage}`);
+    selectedElements.forEach(element => {
+      element.style.display = "block";
+    });
+  }
+  
+  // Fungsi untuk mengatur bahasa saat halaman dimuat berdasarkan localStorage
+  function initializeLanguage() {
+    // Ambil bahasa yang disimpan di localStorage atau default ke EN jika belum ada
+    const savedLanguage = localStorage.getItem("preferredLanguage") || "EN";
+  
+    // Setel dropdown ke bahasa yang tersimpan
+    document.getElementById("languageSelect").value = savedLanguage;
+  
+    // Panggil changeLanguage untuk mengatur tampilan sesuai bahasa yang tersimpan
+    changeLanguage();
+  }
+  
+  // Event listener untuk dropdown, memanggil changeLanguage setiap kali pilihan berubah
+  document.getElementById("languageSelect").addEventListener("change", changeLanguage);
+  
+  // Panggil fungsi initializeLanguage saat halaman pertama kali dimuat
+  initializeLanguage();
+
+// Fungsi untuk mengubah bahasa offcanvas
+function changeOffcanvasLanguage() {
+    // Ambil nilai bahasa yang dipilih
+    const selectedLanguage = document.getElementById("languageSelectOffCanvas").value;
+  
+    // Simpan bahasa yang dipilih ke dalam localStorage
+    localStorage.setItem("preferredLanguage", selectedLanguage);
+  
+    // Dapatkan semua elemen dengan kelas "lang-"
+    const allLanguages = document.querySelectorAll("[class*='lang-']");
+  
+    // Sembunyikan semua elemen bahasa terlebih dahulu
+    allLanguages.forEach(element => {
+      element.style.display = "none";
+    });
+  
+    // Tampilkan elemen sesuai bahasa yang dipilih
+    const selectedElements = document.querySelectorAll(`.lang-${selectedLanguage}`);
+    selectedElements.forEach(element => {
+      element.style.display = "block";
+    });
+
+    // Menutup offcanvas setelah memilih bahasa
+    closeOffcanvasMenu();
+}
+
+// Fungsi untuk mengatur bahasa saat halaman dimuat berdasarkan localStorage
+function initializeOffcanvasLanguage() {
+    // Ambil bahasa yang disimpan di localStorage atau default ke ID jika belum ada
+    const savedLanguage = localStorage.getItem("preferredLanguage") || "ID";
+  
+    // Setel dropdown ke bahasa yang tersimpan
+    document.getElementById("languageSelectOffCanvas").value = savedLanguage;
+  
+    // Panggil changeLanguage untuk mengatur tampilan sesuai bahasa yang tersimpan
+    changeOffcanvasLanguage();
+}
+
+// Event listener untuk dropdown, memanggil changeOffcanvasLanguage setiap kali pilihan berubah
+document.getElementById("languageSelectOffCanvas").addEventListener("change", changeOffcanvasLanguage);
+
+// Panggil fungsi initializeOffcanvasLanguage saat halaman pertama kali dimuat
+initializeOffcanvasLanguage();
+
+  
+
 var tahunElement = document.getElementById("tahun");
     var tahunSaatIni = new Date().getFullYear();
     tahunElement.textContent = tahunSaatIni;
@@ -89,7 +176,7 @@ var tahunElement = document.getElementById("tahun");
         let interval;
         
         const images = [
-            "img/listfilm/Foto Web Listfilm.png",
+            "img/listfilm/FotoWebListfilm.png",
             "img/listfilm/Upcoming.png",
             "img/listfilm/nowplaying.png",
             "img/listfilm/bookmark.png",

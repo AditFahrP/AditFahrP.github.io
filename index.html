@@ -1,252 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="icon" href="img/logo.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="icon" href="img/logo.png" />
     <title>Adithia FP</title>
-    <link rel="stylesheet" href="style.css">
-    <link id="theme-style" rel="stylesheet" href="style-dark.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link id="theme-style" rel="stylesheet" href="style-dark.css" />
+  </head>
+  <body>
     <!-- Header -->
     <header class="head-bar">
-        <nav class="navbar">
-            <h2><a href="/">Adithia FP</a></h2>
-            <ul class="nav-menu">
-                <li class="nav-menu-bar sun" id="sunMoonToggle"><a href="#"><img src="img/bx-sun.svg" alt=""></a></li>
-                <li class="nav-menu-bar moon"><a href="#"><img src="img/bxs-moon.svg" alt=""></a></li>
-                <li class="nav-menu-bar"><a href="#home">Home</a></li>
-                <li class="nav-menu-bar"><a href="#about">About</a></li>
-                <li class="nav-menu-bar"><a href="#project">Project</a></li>
-                <li class="nav-menu-bar"><a href="#contact">Contact</a></li>
-                <li class="nav-menu-bar">
-                    <select id="languageSelect" class="dropdown">
-                        <option value="ID">Id</option>
-                        <option value="EN">En</option>
-                    </select>
-                </li>
-            </ul>
-            <button id="hamburgerButton" class="navbar-menu__hamburger-button pointer"><span class="fa-solid fa-bars"></span></button>
-        </nav>
+      <nav class="navbar">
+        <h2><a href="/">Adithia FP</a></h2>
+        <ul class="nav-menu">
+          <li class="nav-menu-bar sun" id="sunMoonToggle">
+            <a href="#"><img src="img/bx-sun.svg" alt="" /></a>
+          </li>
+          <li class="nav-menu-bar moon">
+            <a href="#"><img src="img/bxs-moon.svg" alt="" /></a>
+          </li>
+          <li class="nav-menu-bar"><a href="#home">Home</a></li>
+          <li class="nav-menu-bar"><a href="#about">About</a></li>
+          <li class="nav-menu-bar"><a href="#project">Project</a></li>
+          <li class="nav-menu-bar"><a href="#contact">Contact</a></li>
+          <li class="nav-menu-bar">
+            <select id="languageSelect" class="dropdown">
+              <option value="ID">Id</option>
+              <option value="EN">En</option>
+            </select>
+          </li>
+        </ul>
+        <button id="hamburgerButton" class="navbar-menu__hamburger-button pointer"><span class="fa-solid fa-bars"></span></button>
+      </nav>
     </header>
 
     <!-- Off Canvas -->
     <div class="navbar-menu__offcanvas">
-        <button id="xmarkButton" class="navbar-menu__xmark-button pointer"><span class="fa-solid fa-xmark"></span></button>
-            <ul class="navbar-menu__list-offcanvas">
-                <li class="navbar-menu__list-offcanvas-item sun" id="sunMoonToggleOffCanvas"><a href="#"><img src="img/bx-sun.svg" alt=""></a></li>
-                <li class="navbar-menu__list-offcanvas-item moon"><a href="#"><img src="img/bxs-moon.svg" alt=""></a></li>
-                <li class="navbar-menu__list-offcanvas-item"><a href="#home">Home</a></li>
-                <li class="navbar-menu__list-offcanvas-item"><a href="#about">About</a></li>
-                <li class="navbar-menu__list-offcanvas-item"><a href="#project">Projects</a></li>
-                <li class="navbar-menu__list-offcanvas-item"><a href="#contact">Contact</a></li>
-                <li class="navbar-menu__list-offcanvas-item-dropdown">
-                    <select id="languageSelectOffCanvas" class="dropdown">
-                        <option value="ID">Id</option>
-                        <option value="EN">En</option>
-                    </select>
-                </li>
-            </ul>
+      <button id="xmarkButton" class="navbar-menu__xmark-button pointer"><span class="fa-solid fa-xmark"></span></button>
+      <ul class="navbar-menu__list-offcanvas">
+        <li class="navbar-menu__list-offcanvas-item sun" id="sunMoonToggleOffCanvas">
+          <a href="#"><img src="img/bx-sun.svg" alt="" /></a>
+        </li>
+        <li class="navbar-menu__list-offcanvas-item moon">
+          <a href="#"><img src="img/bxs-moon.svg" alt="" /></a>
+        </li>
+        <li class="navbar-menu__list-offcanvas-item"><a href="#home">Home</a></li>
+        <li class="navbar-menu__list-offcanvas-item"><a href="#about">About</a></li>
+        <li class="navbar-menu__list-offcanvas-item"><a href="#project">Projects</a></li>
+        <li class="navbar-menu__list-offcanvas-item"><a href="#contact">Contact</a></li>
+        <li class="navbar-menu__list-offcanvas-item-dropdown">
+          <select id="languageSelectOffCanvas" class="dropdown">
+            <option value="ID">Id</option>
+            <option value="EN">En</option>
+          </select>
+        </li>
+      </ul>
     </div>
 
     <!-- section one home -->
     <section class="section-one" id="home">
-        <div class="sec-div-home">
-            <div class="sec-div-content-home">
-                <div class="sec-div-text-home">
-                    <h1>Front End Web Developer <span class="fa-regular fa-hand fa-beat"></span></h1>
-                    <p class="lang-EN">Hi my name is <b>Adithia Fahri Pahrudin</b>. A Junior Front-End Web Developer based in Kuningan, Indonesia
-                        <a href="https://www.google.co.id/maps/place/Kuningan,+Kuningan+Regency,+West+Java/@-6.9812218,108.4520692,13z/data=!4m15!1m8!3m7!1s0x2e6f1422db86b057:0x401e8f1fc28e2a0!2sKuningan,+Kuningan+Regency,+West+Java!3b1!8m2!3d-6.9810103!4d108.4928912!16zL20vMDd6X3Fz!3m5!1s0x2e6f1422db86b057:0x401e8f1fc28e2a0!8m2!3d-6.9810103!4d108.4928912!16zL20vMDd6X3Fz?hl=en&entry=ttu" target="_blank" rel="noreferrer noopener"><span class="fa-solid fa-location-dot" style="color: crimson;"></span></a>
-                    </p>
-                    <p class="lang-ID">Halo nama saya <b>Adithia Fahri Pahrudin</b>. Seorang Junior Front-End Web Developer yang berbasis di Kuningan, Indonesia
-                        <a href="https://www.google.co.id/maps/place/Kuningan,+Kuningan+Regency,+West+Java/@-6.9812218,108.4520692,13z/data=!4m15!1m8!3m7!1s0x2e6f1422db86b057:0x401e8f1fc28e2a0!2sKuningan,+Kuningan+Regency,+West+Java!3b1!8m2!3d-6.9810103!4d108.4928912!16zL20vMDd6X3Fz!3m5!1s0x2e6f1422db86b057:0x401e8f1fc28e2a0!8m2!3d-6.9810103!4d108.4928912!16zL20vMDd6X3Fz?hl=en&entry=ttu" target="_blank" rel="noreferrer noopener"><span class="fa-solid fa-location-dot" style="color: crimson;"></span></a>
-                    </p>
-                        <div class="sec-div-logo">
-                            <a href="https://web.facebook.com/adithia.fahrudin" target="_blank"></a>
-                            <a href="https://www.instagram.com/fahriadithia/" target="_blank"></a>
-                            <a href="https://www.linkedin.com/in/aditfp/" target="_blank"></a>
-                            <a href="https://github.com/AditFahrP" target="_blank"></a>
-                        </div>
-                        <div class="sec-div-skill">
-                            <b>tech i use</b>
-                            <ul class="icon-list">
-                                <li>
-                                    <div class="icon-wrapper">
-                                        <img src="https://skillicons.dev/icons?i=html,css" alt="HTML & CSS Icons">
-                                        <span>HTML & CSS</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="icon-wrapper">
-                                        <img src="https://skillicons.dev/icons?i=js,php" alt="JS & PHP Icons">
-                                        <span>JS & PHP</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="icon-wrapper">
-                                        <img src="https://skillicons.dev/icons?i=bootstrap,jquery,nodejs" alt="Bootstrap, Jquery & Nodejs Icons">
-                                        <span>Bootstrap, Jquery & Nodejs</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="icon-wrapper">
-                                        <img src="https://skillicons.dev/icons?i=github,webpack" alt="GitHub & Webpack Icons">
-                                        <span>GitHub & Webpack</span>
-                                    </div>
-                                </li>
-                            </ul>                            
-                        </div>
-                </div>
+      <div class="sec-div-home">
+        <div class="sec-div-content-home">
+          <div class="sec-div-text-home">
+            <h1>Front End Web Developer <span class="fa-regular fa-hand fa-beat"></span></h1>
+            <p class="lang-EN">
+              Hi my name is <b>Adithia Fahri Pahrudin</b>. A Junior Front-End Web Developer based in Kuningan, Indonesia
+              <a
+                href="https://www.google.co.id/maps/place/Kuningan,+Kuningan+Regency,+West+Java/@-6.9812218,108.4520692,13z/data=!4m15!1m8!3m7!1s0x2e6f1422db86b057:0x401e8f1fc28e2a0!2sKuningan,+Kuningan+Regency,+West+Java!3b1!8m2!3d-6.9810103!4d108.4928912!16zL20vMDd6X3Fz!3m5!1s0x2e6f1422db86b057:0x401e8f1fc28e2a0!8m2!3d-6.9810103!4d108.4928912!16zL20vMDd6X3Fz?hl=en&entry=ttu"
+                target="_blank"
+                rel="noreferrer noopener"
+                ><span class="fa-solid fa-location-dot" style="color: crimson"></span
+              ></a>
+            </p>
+            <p class="lang-ID">
+              Halo nama saya <b>Adithia Fahri Pahrudin</b>. Seorang Junior Front-End Web Developer yang berbasis di Kuningan, Indonesia
+              <a
+                href="https://www.google.co.id/maps/place/Kuningan,+Kuningan+Regency,+West+Java/@-6.9812218,108.4520692,13z/data=!4m15!1m8!3m7!1s0x2e6f1422db86b057:0x401e8f1fc28e2a0!2sKuningan,+Kuningan+Regency,+West+Java!3b1!8m2!3d-6.9810103!4d108.4928912!16zL20vMDd6X3Fz!3m5!1s0x2e6f1422db86b057:0x401e8f1fc28e2a0!8m2!3d-6.9810103!4d108.4928912!16zL20vMDd6X3Fz?hl=en&entry=ttu"
+                target="_blank"
+                rel="noreferrer noopener"
+                ><span class="fa-solid fa-location-dot" style="color: crimson"></span
+              ></a>
+            </p>
+            <div class="sec-div-logo">
+              <a href="https://web.facebook.com/adithia.fahrudin" target="_blank"></a>
+              <a href="https://www.instagram.com/fahriadithia/" target="_blank"></a>
+              <a href="https://www.linkedin.com/in/aditfp/" target="_blank"></a>
+              <a href="https://github.com/AditFahrP" target="_blank"></a>
             </div>
-            <img class="img-profile" src="img/foto profile.jpg" alt="foto profile">
+            <div class="sec-div-skill">
+              <b>tech i use</b>
+              <ul class="icon-list">
+                <li>
+                  <div class="icon-wrapper">
+                    <img src="https://skillicons.dev/icons?i=html,css" alt="HTML & CSS Icons" />
+                    <span>HTML & CSS</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon-wrapper">
+                    <img src="https://skillicons.dev/icons?i=js,php" alt="JS & PHP Icons" />
+                    <span>JS & PHP</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon-wrapper">
+                    <img src="https://skillicons.dev/icons?i=bootstrap,jquery,nodejs" alt="Bootstrap, Jquery & Nodejs Icons" />
+                    <span>Bootstrap, Jquery & Nodejs</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon-wrapper">
+                    <img src="https://skillicons.dev/icons?i=github,webpack" alt="GitHub & Webpack Icons" />
+                    <span>GitHub & Webpack</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+        <img class="img-profile" src="img/foto profile.jpg" alt="foto profile" />
+      </div>
     </section>
 
     <!-- section two about -->
     <section class="section-two" id="about">
-        <div class="sec-div-about">
-            <div class="sec-div-content-about">
-                <!-- <img class="img-profile" src="img/foto profile.jpg" alt="foto profile"> -->
-                <div class="sec-div-text-about">
-                    <b class="lang-EN">ABOUT ME</b>
-                    <b class="lang-ID">TENTANG SAYA</b>
-                    <div class="text-about">
-                        <h2 class="lang-EN">A Junior Front-End Web Developer based in Kuningan, Indonesia <a href="https://maps.app.goo.gl/Uf9fEg74cx2w9x2L9" target="_blank" rel="noreferrer noopener"><span class="fa-solid fa-location-dot" style="color: crimson;"></span></a></h2>
-                        <h2 class="lang-ID">Seorang Junior Front-End Web Developer yang berbasis di Kuningan, Indonesia <a href="https://maps.app.goo.gl/Uf9fEg74cx2w9x2L9" target="_blank" rel="noreferrer noopener"><span class="fa-solid fa-location-dot" style="color: crimson;"></span></a></h2>
-                        <h5 class="lang-EN">As a Junior Front-End Web Developer, I possess a good arsenal of skills in HTML, CSS, PHP & Javascript. I pursue best practices whenever I code. I am also the kind of person who thrives in collaborating with teams to build web applications. </h5>
-                        <h5 class="lang-ID">Sebagai Junior Front-End Web Developer, saya memiliki keterampilan dalam HTML, CSS, PHP, dan Javascript. Saya selalu berusaha menerapkan praktik terbaik setiap kali menulis kode. Saya juga tipe orang yang berkembang dalam kolaborasi tim untuk membangun aplikasi web. </h5>
-                    </div>
-                </div>
-                <div class="sec-div-text-about">
-                    <b class="lang-EN">MY EDUCATIONS</b>
-                    <b class="lang-ID">PENDIDIKAN SAYA</b>
-                    <ul class="education">
-                        <li class="lang-EN">2017 - 2019 at <a href="https://www.smkn3-kuningan.sch.id/" target="_blank">SMK NEGERI 3 KUNINGAN</a> MAJOR ARCHITECTURAL DRAWING TECHNIQUES</li>
-                        <li class="lang-ID">2017 - 2019 di <a href="https://www.smkn3-kuningan.sch.id/" target="_blank">SMK NEGERI 3 KUNINGAN</a> JURUSAN TEKNIK GAMBAR BANGUNAN</li>
-                        <h5 class="lang-EN">In this school, I studied for 3 years in architectural drawing techniques, learning both manual and digital drawing methods, including AutoCAD and SketchUp. I also learned to calculate construction budgets (RAB).</h5>
-                        <h5 class="lang-ID">Saya belajar selama 3 tahun di jurusan teknik gambar arsitektur, mempelajari metode gambar manual dan digital, termasuk AutoCAD dan SketchUp. Saya juga belajar menghitung anggaran pembangunan (RAB).</h5>
-                        <li class="lang-EN">2019 - 2023 at <a href="https://www.unsika.ac.id/" target="_blank">UNIVERSITY SINGAPERBANGSA KARAWANG</a> MAJOR <a href="https://cs.unsika.ac.id/" target="_blank">COMPUTER SCIENCE </a></li>
-                        <li class="lang-ID">2019 - 2023 di <a href="https://www.unsika.ac.id/" target="_blank">UNIVERSITAS SINGAPERBANGSA KARAWANG</a> JURUSAN <a href="https://cs.unsika.ac.id/" target="_blank">INFORMATIKA </a></li>
-                        <h5 class="lang-EN">Here, I studied the fundamentals of computers, algorithms, data structures, cybersecurity, artificial intelligence, data science, and programming for 4 years. I graduated in 2023 with a Bachelor of Computer Science (S.Kom) degree.</h5>
-                        <h5 class="lang-ID">Di sini, saya mempelajari dasar-dasar komputer, algoritma, struktur data, keamanan siber, kecerdasan buatan, sains data, dan pemrograman selama 4 tahun. Saya lulus pada tahun 2023 dengan gelar Sarjana Ilmu Komputer (S.Kom).</h5>
-                        <li class="lang-EN">2022 FEBRUARY - JULY at <a href="https://www.dicoding.com/" target="_blank">DICODING</a> LEARNING FRONT-END WEB DEVELOPER & BACK-END DEVELOPER</li>
-                        <li class="lang-ID">2022 FEBRUARI - JULI di <a href="https://www.dicoding.com/" target="_blank">DICODING</a> BELAJAR FRONT-END WEB DEVELOPER & BACK-END DEVELOPER</li>
-                        <h5 class="lang-EN">I participated in the Independent Study Program (SIB Batch 2 - 2022) with Dicoding, an education-focused company. Here, I learned to develop both front-end and back-end applications, from basic programming to building professional websites.</h5>
-                        <h5 class="lang-ID">Saya mengikuti Program Studi Independen Bersertifikat (SIB Batch 2 - 2022) bersama Dicoding, perusahaan di bidang pendidikan. Di sini, saya belajar membuat aplikasi front-end dan back-end dengan baik, mulai dari pemrograman dasar hingga membangun situs web profesional.</h5>
-                    </ul>
-                </div>
-                <div class="sec-div-text-about">
-                    <b class="lang-EN">MY EXPERIENCE</b>
-                    <b class="lang-ID">PENGALAMAN SAYA</b>
-                    <ul class="education">
-                        <li class="lang-EN">2019 OCTOBER - DECEMBER AT CV.MAHONI (BANDUNG, WEST JAVA)</li>
-                        <li class="lang-ID">2019 OKOTOBER - DESEMBER DI CV.MAHONI (BANDUNG, JAWA BARAT)</li>
-                        <h5 class="lang-EN">CV.Mahoni is a company engaged in construction consulting services located in Bandung, West Java. Here, I completed an internship or practical work experience, which was required for graduation at that time. During this 3-month period, I experienced working directly with professionals alongside two of my colleagues. My role was as a drafter, responsible for creating detailed drawings based on the architect's designs, particularly focusing on the interior sections.</h5>
-                        <h5 class="lang-ID">CV. Mahoni adalah perusahaan yang bergerak di bidang jasa konsultasi konstruksi yang berlokasi di Bandung, Jawa Barat. Di sini, saya menyelesaikan magang atau kerja praktik yang merupakan persyaratan kelulusan pada saat itu. Selama periode 3 bulan ini, saya mendapatkan pengalaman bekerja langsung dengan para profesional bersama dua rekan saya. Peran saya adalah sebagai drafter, bertanggung jawab untuk membuat gambar detail berdasarkan desain arsitek, khususnya dengan fokus pada bagian interior.</h5>
-                    </ul>
-                </div>
+      <div class="sec-div-about">
+        <div class="sec-div-content-about">
+          <!-- <img class="img-profile" src="img/foto profile.jpg" alt="foto profile"> -->
+          <div class="sec-div-text-about">
+            <b class="lang-EN">ABOUT ME</b>
+            <b class="lang-ID">TENTANG SAYA</b>
+            <div class="text-about">
+              <h2 class="lang-EN">
+                A Junior Front-End Web Developer based in Kuningan, Indonesia
+                <a href="https://maps.app.goo.gl/Uf9fEg74cx2w9x2L9" target="_blank" rel="noreferrer noopener"><span class="fa-solid fa-location-dot" style="color: crimson"></span></a>
+              </h2>
+              <h2 class="lang-ID">
+                Seorang Junior Front-End Web Developer yang berbasis di Kuningan, Indonesia
+                <a href="https://maps.app.goo.gl/Uf9fEg74cx2w9x2L9" target="_blank" rel="noreferrer noopener"><span class="fa-solid fa-location-dot" style="color: crimson"></span></a>
+              </h2>
+              <h5 class="lang-EN">
+                As a Junior Front-End Web Developer, I possess a good arsenal of skills in HTML, CSS, PHP & Javascript. I pursue best practices whenever I code. I am also the kind of person who thrives in collaborating with teams to build
+                web applications.
+              </h5>
+              <h5 class="lang-ID">
+                Sebagai Junior Front-End Web Developer, saya memiliki keterampilan dalam HTML, CSS, PHP, dan Javascript. Saya selalu berusaha menerapkan praktik terbaik setiap kali menulis kode. Saya juga tipe orang yang berkembang dalam
+                kolaborasi tim untuk membangun aplikasi web.
+              </h5>
             </div>
+          </div>
+          <div class="sec-div-text-about">
+            <b class="lang-EN">MY EDUCATIONS</b>
+            <b class="lang-ID">PENDIDIKAN SAYA</b>
+            <ul class="education">
+              <li class="lang-EN">2017 - 2019 at <a href="https://www.smkn3-kuningan.sch.id/" target="_blank">SMK NEGERI 3 KUNINGAN</a> MAJOR ARCHITECTURAL DRAWING TECHNIQUES</li>
+              <li class="lang-ID">2017 - 2019 di <a href="https://www.smkn3-kuningan.sch.id/" target="_blank">SMK NEGERI 3 KUNINGAN</a> JURUSAN TEKNIK GAMBAR BANGUNAN</li>
+              <h5 class="lang-EN">
+                In this school, I studied for 3 years in architectural drawing techniques, learning both manual and digital drawing methods, including AutoCAD and SketchUp. I also learned to calculate construction budgets (RAB).
+              </h5>
+              <h5 class="lang-ID">Saya belajar selama 3 tahun di jurusan teknik gambar arsitektur, mempelajari metode gambar manual dan digital, termasuk AutoCAD dan SketchUp. Saya juga belajar menghitung anggaran pembangunan (RAB).</h5>
+              <li class="lang-EN">2019 - 2023 at <a href="https://www.unsika.ac.id/" target="_blank">UNIVERSITY SINGAPERBANGSA KARAWANG</a> MAJOR <a href="https://cs.unsika.ac.id/" target="_blank">COMPUTER SCIENCE </a></li>
+              <li class="lang-ID">2019 - 2023 di <a href="https://www.unsika.ac.id/" target="_blank">UNIVERSITAS SINGAPERBANGSA KARAWANG</a> JURUSAN <a href="https://cs.unsika.ac.id/" target="_blank">INFORMATIKA </a></li>
+              <h5 class="lang-EN">
+                Here, I studied the fundamentals of computers, algorithms, data structures, cybersecurity, artificial intelligence, data science, and programming for 4 years. I graduated in 2023 with a Bachelor of Computer Science (S.Kom)
+                degree.
+              </h5>
+              <h5 class="lang-ID">
+                Di sini, saya mempelajari dasar-dasar komputer, algoritma, struktur data, keamanan siber, kecerdasan buatan, sains data, dan pemrograman selama 4 tahun. Saya lulus pada tahun 2023 dengan gelar Sarjana Ilmu Komputer (S.Kom).
+              </h5>
+              <li class="lang-EN">2022 FEBRUARY - JULY at <a href="https://www.dicoding.com/" target="_blank">DICODING</a> LEARNING FRONT-END WEB DEVELOPER & BACK-END DEVELOPER</li>
+              <li class="lang-ID">2022 FEBRUARI - JULI di <a href="https://www.dicoding.com/" target="_blank">DICODING</a> BELAJAR FRONT-END WEB DEVELOPER & BACK-END DEVELOPER</li>
+              <h5 class="lang-EN">
+                I participated in the Independent Study Program (SIB Batch 2 - 2022) with Dicoding, an education-focused company. Here, I learned to develop both front-end and back-end applications, from basic programming to building
+                professional websites.
+              </h5>
+              <h5 class="lang-ID">
+                Saya mengikuti Program Studi Independen Bersertifikat (SIB Batch 2 - 2022) bersama Dicoding, perusahaan di bidang pendidikan. Di sini, saya belajar membuat aplikasi front-end dan back-end dengan baik, mulai dari pemrograman
+                dasar hingga membangun situs web profesional.
+              </h5>
+            </ul>
+          </div>
+          <div class="sec-div-text-about">
+            <b class="lang-EN">MY EXPERIENCE</b>
+            <b class="lang-ID">PENGALAMAN SAYA</b>
+            <ul class="education">
+              <li class="lang-EN">2019 OCTOBER - DECEMBER AT CV.MAHONI (BANDUNG, WEST JAVA)</li>
+              <li class="lang-ID">2019 OKOTOBER - DESEMBER DI CV.MAHONI (BANDUNG, JAWA BARAT)</li>
+              <h5 class="lang-EN">
+                CV.Mahoni is a company engaged in construction consulting services located in Bandung, West Java. Here, I completed an internship or practical work experience, which was required for graduation at that time. During this
+                3-month period, I experienced working directly with professionals alongside two of my colleagues. My role was as a drafter, responsible for creating detailed drawings based on the architect's designs, particularly focusing
+                on the interior sections.
+              </h5>
+              <h5 class="lang-ID">
+                CV. Mahoni adalah perusahaan yang bergerak di bidang jasa konsultasi konstruksi yang berlokasi di Bandung, Jawa Barat. Di sini, saya menyelesaikan magang atau kerja praktik yang merupakan persyaratan kelulusan pada saat itu.
+                Selama periode 3 bulan ini, saya mendapatkan pengalaman bekerja langsung dengan para profesional bersama dua rekan saya. Peran saya adalah sebagai drafter, bertanggung jawab untuk membuat gambar detail berdasarkan desain
+                arsitek, khususnya dengan fokus pada bagian interior.
+              </h5>
+            </ul>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- section 3 project -->
-    <section class="section-three" id="project"> 
-        <div class="sec-div-project">
-            <div class="sec-div-content-project">
-                <b class="lang-EN">PORTFOLIO</b>
-                <b class="lang-ID">PORTOFOLIO</b>
-                <h2 class="lang-EN">This is what I've been making so far <span class="fa-solid fa-cube fa-bounce" style="color: #00ff40;"></span></h2>
-                <h2 class="lang-ID">Yang telah saya buat sejauh ini  <span class="fa-solid fa-cube fa-bounce" style="color: #00ff40;"></span></h2>
-            </div>
-            <div class="sec-div-container-project">
-                <a href="https://listfilm.vercel.app/" target="_blank">
-                <img class="img-project-1" src="img/listfilm/FotoWebListfilm.png" alt="Foto Website" id="rotatingImage"></a>
-                <div class="sec-div-text-project">
-                    <b>LIST FILM</b>
-                    <p class="lang-EN">(December 2022)</p>
-                    <p class="lang-ID">(Desember 2022)</p>
-                    <h4 class="text-adjusment-en-2 lang-EN">This is a website for looking for information about a film starting from the film's release date, synopsis and so on. This website uses the API from TheMovieDB and also uses storage to store favorite films using IndexedDB</h4>
-                    <h4 class="text-adjusment-id-2 lang-ID">Ini adalah situs web untuk mencari informasi tentang sebuah film, mulai dari tanggal rilis, sinopsis, dan lainnya. Situs web ini menggunakan API dari TheMovieDB serta menggunakan penyimpanan IndexedDB untuk menyimpan film favorit</h4>
-                    <img class="img-project-skills-1"src="https://skillicons.dev/icons?i=html,css,js,bootstrap,nodejs,webpack" alt="tech used for particular project">
-                    <a href="https://listfilm.vercel.app/" target="_blank" rel="noreferrer noopener">
-                    Live Demo <span class="fa-solid fa-arrow-up-right-from-square"></span></a>
-                </div>
-            </div>
-            <div class="sec-div-container-project">
-                <a href="https://github.com/AditFahrP/forumdiskusi" target="_blank">
-                <img class="img-project-2" src="img/forumdiskusi/home.png" id="rotatingImage2" alt="Foto Website"></a>
-                <div class="sec-div-text-project">
-                    <b>DISKUSI</b>
-                    <p class="lang-EN">(November 2023)</p>
-                    <p class="lang-ID">(November 2023)</p>
-                    <h4 class="lang-EN">Diskusi is a website that provides a platform for discussing issues or sharing experiences in solving programming problems. This website uses Laravel and MySQL technology</h4>
-                    <h4 class="lang-ID">Diskusi adalah situs web yang menyediakan platform untuk mendiskusikan berbagai isu atau berbagi pengalaman dalam menyelesaikan masalah pemrograman. Situs web ini menggunakan teknologi Laravel dan MySQL</h4>
-                    <img class="img-project-skills-2" src="https://skillicons.dev/icons?i=html,css,js,bootstrap,laravel,sass,vite" alt="tech used for particular project">
-                    <a href="https://forumdiskusi-production.up.railway.app" target="_blank" rel="noreferrer noopener">
-                    Live Demo <span class="fa-solid fa-arrow-up-right-from-square"></span></a>
-                </div>
-            </div>
-            <div class="sec-div-container-project">
-                <a href="https://github.com/AditFahrP/pos" target="_blank">
-                <img class="img-project-3" src="img/pos/point of sales.png" id="rotatingImage3" alt="Foto Website"></a>
-                <div class="sec-div-text-project">
-                    <b>POINT OF SALES</b>
-                    <p>(April 2024)</p>
-                    <h4 class="text-adjusment-en-1 lang-EN">Point of Sales (POS) is a system used to process sales transactions in stores or business locations. Typically, a POS system includes hardware such as cash registers, receipt printers, and software that helps manage sales, inventory, and customer data. To make this website using CodeIgniter 3</h4>
-                    <h4 class="text-adjusment-id-1 lang-ID">Point of Sales (POS) adalah sistem yang digunakan untuk memproses transaksi penjualan di toko atau lokasi bisnis. Biasanya, sistem POS mencakup perangkat keras seperti mesin kasir, printer struk, serta perangkat lunak yang membantu mengelola penjualan, inventaris, dan data pelanggan. Website ini dibuat menggunakan CodeIgniter 3</h4>
-                    <img class="img-project-skills-3" src="https://skillicons.dev/icons?i=html,css,php,bootstrap,jquery" alt="tech used for particular project">
-                    <a href="https://github.com/AditFahrP/pos" target="_blank" rel="noreferrer noopener">
-                    Source Code <span class="fa-solid fa-arrow-up-right-from-square"></span></a>
-                </div>
-            </div>
+    <section class="section-three" id="project">
+      <div class="sec-div-project">
+        <div class="sec-div-content-project">
+          <b class="lang-EN">PORTFOLIO</b>
+          <b class="lang-ID">PORTOFOLIO</b>
+          <h2 class="lang-EN">This is what I've been making so far <span class="fa-solid fa-cube fa-bounce" style="color: #00ff40"></span></h2>
+          <h2 class="lang-ID">Yang telah saya buat sejauh ini <span class="fa-solid fa-cube fa-bounce" style="color: #00ff40"></span></h2>
         </div>
+        <div class="sec-div-container-project">
+          <a href="https://listfilm.vercel.app/" target="_blank"> <img class="img-project-1" src="img/listfilm/FotoWebListfilm.png" alt="Foto Website" id="rotatingImage" /></a>
+          <div class="sec-div-text-project">
+            <b>LIST FILM</b>
+            <p class="lang-EN">(December 2022)</p>
+            <p class="lang-ID">(Desember 2022)</p>
+            <h4 class="text-adjusment-en-2 lang-EN">
+              This is a website for looking for information about a film starting from the film's release date, synopsis and so on. This website uses the API from TheMovieDB and also uses storage to store favorite films using IndexedDB
+            </h4>
+            <h4 class="text-adjusment-id-2 lang-ID">
+              Ini adalah situs web untuk mencari informasi tentang sebuah film, mulai dari tanggal rilis, sinopsis, dan lainnya. Situs web ini menggunakan API dari TheMovieDB serta menggunakan penyimpanan IndexedDB untuk menyimpan film
+              favorit
+            </h4>
+            <img class="img-project-skills-1" src="https://skillicons.dev/icons?i=html,css,js,bootstrap,nodejs,webpack" alt="tech used for particular project" />
+            <a href="https://listfilm.vercel.app/" target="_blank" rel="noreferrer noopener"> Live Demo <span class="fa-solid fa-arrow-up-right-from-square"></span></a>
+          </div>
+        </div>
+        <div class="sec-div-container-project">
+          <a href="https://forumdiskusi-production.up.railway.app" target="_blank"> <img class="img-project-2" src="img/forumdiskusi/home.png" id="rotatingImage2" alt="Foto Website" /></a>
+          <div class="sec-div-text-project">
+            <b>DISKUSI</b>
+            <p class="lang-EN">(November 2023)</p>
+            <p class="lang-ID">(November 2023)</p>
+            <h4 class="lang-EN">Diskusi is a website that provides a platform for discussing issues or sharing experiences in solving programming problems. This website uses Laravel and MySQL technology</h4>
+            <h4 class="lang-ID">Diskusi adalah situs web yang menyediakan platform untuk mendiskusikan berbagai isu atau berbagi pengalaman dalam menyelesaikan masalah pemrograman. Situs web ini menggunakan teknologi Laravel dan MySQL</h4>
+            <img class="img-project-skills-2" src="https://skillicons.dev/icons?i=html,css,js,bootstrap,laravel,sass,vite" alt="tech used for particular project" />
+            <a href="https://forumdiskusi-production.up.railway.app" target="_blank" rel="noreferrer noopener"> Live Demo <span class="fa-solid fa-arrow-up-right-from-square"></span></a>
+          </div>
+        </div>
+        <div class="sec-div-container-project">
+          <a href="https://blog-production-1538.up.railway.app" target="_blank"> <img class="img-project-2" src="img/forumdiskusi/home.png" id="rotatingImage4" alt="Foto Website" /></a>
+          <div class="sec-div-text-project">
+            <b>BLOGPEDIA</b>
+            <p class="lang-EN">(Februari 2025)</p>
+            <p class="lang-ID">(February 2025)</p>
+            <h4 class="lang-EN">A Blogpedia is a place to share opinions, informations or knowledge online. This website uses Laravel and MySQL technology.</h4>
+            <h4 class="lang-ID">Blogpedia adalah tempat untuk membagikan pendapat, informasi atau pengetahuan yang dimiliki secara online. Situs web ini menggunakan teknologi Laravel dan MySQL</h4>
+            <img class="img-project-skills-2" src="https://skillicons.dev/icons?i=html,css,js,bootstrap,laravel,sass,vite" alt="tech used for particular project" />
+            <a href="https://blog-production-1538.up.railway.app" target="_blank" rel="noreferrer noopener"> Live Demo <span class="fa-solid fa-arrow-up-right-from-square"></span></a>
+          </div>
+        </div>
+        <div class="sec-div-container-project">
+          <a href="https://github.com/AditFahrP/pos" target="_blank"> <img class="img-project-3" src="img/pos/point of sales.png" id="rotatingImage3" alt="Foto Website" /></a>
+          <div class="sec-div-text-project">
+            <b>POINT OF SALES</b>
+            <p>(April 2024)</p>
+            <h4 class="text-adjusment-en-1 lang-EN">
+              Point of Sales (POS) is a system used to process sales transactions in stores or business locations. Typically, a POS system includes hardware such as cash registers, receipt printers, and software that helps manage sales,
+              inventory, and customer data. To make this website using CodeIgniter 3
+            </h4>
+            <h4 class="text-adjusment-id-1 lang-ID">
+              Point of Sales (POS) adalah sistem yang digunakan untuk memproses transaksi penjualan di toko atau lokasi bisnis. Biasanya, sistem POS mencakup perangkat keras seperti mesin kasir, printer struk, serta perangkat lunak yang
+              membantu mengelola penjualan, inventaris, dan data pelanggan. Website ini dibuat menggunakan CodeIgniter 3
+            </h4>
+            <img class="img-project-skills-3" src="https://skillicons.dev/icons?i=html,css,php,bootstrap,jquery" alt="tech used for particular project" />
+            <a href="https://github.com/AditFahrP/pos" target="_blank" rel="noreferrer noopener"> Source Code <span class="fa-solid fa-arrow-up-right-from-square"></span></a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- section 4 -->
-    <section class="section-four" id="contact"> 
-        <div class="sec-div-contac">
-            <div class="sec-div-content-contac">
-                <b class="lang-EN">CONTACT</b>
-                <b class="lang-ID">KONTAK</b>
-                <h2 class="lang-EN">If you need anything, my contact is below <span class="fa-regular fa-hand-point-down fa-bounce" style="color: #ff3d3d;"></span></h2>
-                <h2 class="lang-ID">Jika kamu membutuhkan sesuatu, di bawah adalah kontak saya <span class="fa-regular fa-hand-point-down fa-bounce" style="color: #ff3d3d;"></span></h2>
-            </div>
-            <div class="sec-div-container-contac">
-                <div class="sec-div-text-contac">
-                    <ul class="sec-text-container-contac">
-                        <li class="sec-text-contac">
-                            <span class="fa-solid fa-map-location-dot" style="color: #147efb; font-size: 40px;"></span>
-                            <div class="sec-text-iner">
-                                <h4>Location</h4>
-                                <a href="https://www.google.co.id/maps/place/Kuningan,+Kuningan+Regency,+West+Java/@-6.9812218,108.4520692,13z/data=!4m15!1m8!3m7!1s0x2e6f1422db86b057:0x401e8f1fc28e2a0!2sKuningan,+Kuningan+Regency,+West+Java!3b1!8m2!3d-6.9810103!4d108.4928912!16zL20vMDd6X3Fz!3m5!1s0x2e6f1422db86b057:0x401e8f1fc28e2a0!8m2!3d-6.9810103!4d108.4928912!16zL20vMDd6X3Fz?hl=en&entry=ttu" target="_blank">Kuningan, Jawa Barat</a>
-                            </div>   
-                        </li>
-                        <li class="sec-text-contac">
-                            <span class="fa-solid fa-envelope" style="color: #147efb; font-size: 40px;"></span>
-                            <div class="sec-text-iner">
-                                <h4>Email</h4>
-                                <a href="mailto:aditpahrudin7@gmail.com">aditpahrudin7@gmail.com</a>
-                            </div>   
-                        </li>
-                        
-                        <li class="sec-text-contac">
-                            <span class="fa-brands fa-linkedin" style="color: #147efb; font-size: 40px;"></span>
-                            <div class="sec-text-iner">
-                                <h4>LinkedIn</h4>
-                                <a href="https://www.linkedin.com/in/aditfp/" target="_blank">Adithia Fahri Pahrudin</a>
-                            </div>   
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <section class="section-four" id="contact">
+      <div class="sec-div-contac">
+        <div class="sec-div-content-contac">
+          <b class="lang-EN">CONTACT</b>
+          <b class="lang-ID">KONTAK</b>
+          <h2 class="lang-EN">If you need anything, my contact is below <span class="fa-regular fa-hand-point-down fa-bounce" style="color: #ff3d3d"></span></h2>
+          <h2 class="lang-ID">Jika kamu membutuhkan sesuatu, di bawah adalah kontak saya <span class="fa-regular fa-hand-point-down fa-bounce" style="color: #ff3d3d"></span></h2>
         </div>
+        <div class="sec-div-container-contac">
+          <div class="sec-div-text-contac">
+            <ul class="sec-text-container-contac">
+              <li class="sec-text-contac">
+                <span class="fa-solid fa-map-location-dot" style="color: #147efb; font-size: 40px"></span>
+                <div class="sec-text-iner">
+                  <h4>Location</h4>
+                  <a
+                    href="https://www.google.co.id/maps/place/Kuningan,+Kuningan+Regency,+West+Java/@-6.9812218,108.4520692,13z/data=!4m15!1m8!3m7!1s0x2e6f1422db86b057:0x401e8f1fc28e2a0!2sKuningan,+Kuningan+Regency,+West+Java!3b1!8m2!3d-6.9810103!4d108.4928912!16zL20vMDd6X3Fz!3m5!1s0x2e6f1422db86b057:0x401e8f1fc28e2a0!8m2!3d-6.9810103!4d108.4928912!16zL20vMDd6X3Fz?hl=en&entry=ttu"
+                    target="_blank"
+                    >Kuningan, Jawa Barat</a
+                  >
+                </div>
+              </li>
+              <li class="sec-text-contac">
+                <span class="fa-solid fa-envelope" style="color: #147efb; font-size: 40px"></span>
+                <div class="sec-text-iner">
+                  <h4>Email</h4>
+                  <a href="mailto:aditpahrudin7@gmail.com">aditpahrudin7@gmail.com</a>
+                </div>
+              </li>
+
+              <li class="sec-text-contac">
+                <span class="fa-brands fa-linkedin" style="color: #147efb; font-size: 40px"></span>
+                <div class="sec-text-iner">
+                  <h4>LinkedIn</h4>
+                  <a href="https://www.linkedin.com/in/aditfp/" target="_blank">Adithia Fahri Pahrudin</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer class="footer">
-        <h4>Made with <span class="fa-solid fa-heart" style="color: red;"></span> by <b>AFP</b> - <span id="tahun"></span></h4>
+      <h4>Made with <span class="fa-solid fa-heart" style="color: red"></span> by <b>AFP</b> - <span id="tahun"></span></h4>
     </footer>
     <script src="https://kit.fontawesome.com/481c1b537f.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
